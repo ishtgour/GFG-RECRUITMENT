@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background: #181825;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #23272f;
+    padding: 18px 0 12px;
+    border-bottom: 1px solid #322b4f;
+}
+
+nav h1 {
+    margin: 0;
+    text-align: center;
+    color: #b990ff;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-section {
+    background: #21223b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 42px 36px;
+    border-radius: 28px;
+    box-shadow: 0 2px 28px rgba(50,40,90,0.4);
+    width: 700px;
+    max-width: 90vw;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6c47ff;
+    box-shadow: 0 2px 16px #322b4f50;
+    background: #110f21;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #ec63fa;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.profile-info .about {
+    margin: 16px 0;
+    font-size: 1.1em;
+    color: #dadada;
+}
+
+.education {
+    list-style: none;
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.education li {
+    margin-bottom: 6px;
+    font-size: 1.3em;
+    color: #ec63fa;
+}
+
+.social-links {
+    margin-top: 24px;
+}
+
+.social {
+    display: inline-block;
+    font-size: 1.8em;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background: #181825;
+    color: #b990ff;
+    border: 2px solid #5a46a7;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    text-decoration: none;
+}
+
+.social.instagram:hover {
+    background: #e1306c;
+    color: #fff;
+    border-color: #e1306c;
+}
+
+.social.linkedin:hover {
+    background: #0077b5;
+    color: #fff;
+    border-color: #0077b5;
+}
+
+footer {
+    background: #23272f;
+    color: #b990ff;
+    text-align: center;
+    padding: 14px 0 10px;
+    font-size: 1em;
+    border-top: 1px solid #322b4f;
+    margin-top: 36px;
+    line-height: 1.5;
+}
+footer p {
+    margin: 4px 0;
+}
+
+@media (max-width: 800px) {
+    .profile-section {
+        flex-direction: column;
+        width: 98vw;
+        padding: 26px 8px;
+        gap: 18px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info h2 {
+        font-size: 1.4em;
+    }
+}
